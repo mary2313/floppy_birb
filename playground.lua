@@ -23,7 +23,7 @@ end
 local function tap()
         bird:applyLinearImpulse( 0, -0.3, bird.x, bird.y )
         -- tapCount = tapCount + 1
-        -- tapText.text = tapCount
+
     end
 
 -- shoot()

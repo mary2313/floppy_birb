@@ -2,16 +2,6 @@ local composer = require( "composer" )
 
 local scene = composer.newScene()
 
--- -----------------------------------------------------------------------------------
--- Code outside of the scene event functions below will only be executed ONCE unless
--- the scene is removed entirely (not recycled) via "composer.removeScene()"
--- -----------------------------------------------------------------------------------
--- takes the game to setting
---local function gotoSettings()
---    composer.gotoScene( "gamesettings" )
---end
-
--- takes the game to the playground
 local crashSound = audio.loadSound( "Bad_Piggies.mp3" )
 local crashChannel = audio.play( crashSound )
 audio.dispose(crashChannel)

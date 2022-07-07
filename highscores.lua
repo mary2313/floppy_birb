@@ -2,12 +2,6 @@ local composer = require( "composer" )
 
 local scene = composer.newScene()
 
--- -----------------------------------------------------------------------------------
--- Code outside of the scene event functions below will only be executed ONCE unless
--- the scene is removed entirely (not recycled) via "composer.removeScene()"
--- -----------------------------------------------------------------------------------
-
--- Initialize variables
 local json = require( "json" )
 
 local scoresTable = {}
@@ -18,12 +12,6 @@ local function gotoMenu()
 	composer.gotoScene( "menu", { time=300, effect="fade" } )
 end
 
-
--- -----------------------------------------------------------------------------------
--- Scene event functions
--- -----------------------------------------------------------------------------------
-
--- create()
 function scene:create( event )
 
     local sceneGroup = self.view
